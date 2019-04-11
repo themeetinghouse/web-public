@@ -1,0 +1,45 @@
+.dialog-site-selection {
+
+    .close-dialog-button {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    .form-bar {
+        display: flex;
+        align-items: center;
+        padding: 0px 0 15px;
+        > * {
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+        .separator {
+            padding: 0 10px;
+            flex-grow: 0;
+        }
+    }
+
+    .choose-location-back-button {
+        svg {
+            font-size: 15px;
+        }
+    }
+
+    .about-content {
+        img {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+
+    .content-blank{
+        width: 912px;
+        height: 454px;
+    }
+    
+    .tab-content-container {
+        width: 912px;
+        height: 454px;
+    }
+}

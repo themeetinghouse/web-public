@@ -1,0 +1,22 @@
+.identity {
+    color: white;
+    display: flex;
+
+    .welcome-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .welcome {
+            font-weight: bold;
+            padding-right: 7px;
+        }
+    }
+    .avatar {
+        height: 50px;
+        width: 50px;
+        margin-left: 10px;
+        svg {
+            font-size: 50px;
+        }
+    }
+}

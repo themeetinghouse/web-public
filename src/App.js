@@ -1,28 +1,51 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Entry from './pages/entry/Entry';
+import HomeExplore from './pages/homeExplore';
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
+import purple from '@material-ui/core/colors/purple';
+
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { Home } from './pages/home';
+import { AppContext } from './services/Context';
+import { AppContextProvider } from './components/AppContextProvider';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: purple,
+    secondary: {
+      main: '#f44336',
+    },
+  },
+});
 
 class App extends Component {
+
+  constructor(props){
+    super(props);
+ }
+
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <React.Fragment>
+        <CssBaseline />
+        <MuiThemeProvider theme={theme}>
+          <AppContextProvider> 
+            <Router>
+              <Route exact path="/" component={Entry}></Route>
+              <Route path="/home" component={Home}></Route>
+              {/* <Route exact path="/" render={(props) => <Entry {...props}  />}></Route>
+              <Route path="/home" render={(props) => <Home {...props}  />}></Route> */}
+              {/* <Route path="/home" render={(props) => <Home {...props} onPathChange={this.pathChanged} />}></Route> */}
+            </Router>
+          </AppContextProvider>
+        </MuiThemeProvider>
+      </React.Fragment>
+
     );
   }
+
 }
 
 export default App;

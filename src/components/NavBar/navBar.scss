@@ -1,0 +1,25 @@
+.nav-bar {
+    padding: 0 15px;
+    background-color: #EAEAEA;
+    position: relative;
+
+    .indicator {
+        height: 4px;
+    }
+    .tab {
+        font-size: 1em;
+        height: 60px;
+    }
+
+    .conversation-toggle-button {
+        position: absolute;
+        right: 0;
+        top: 8px;
+        margin-right: 8px;
+
+        .conversation-toggle-label {
+            line-height: 1.2em;
+            margin-left: 10px;
+        }
+    }
+}

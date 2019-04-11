@@ -1,0 +1,55 @@
+.page-entry {
+    background-color: #1F57A4;
+    color: white;
+    text-align: center;
+
+    .entry-logo {
+        width: 50%;
+        max-width: 250px;
+        margin: 40px 0 150px;
+    }
+
+    .entry-explore {
+        color: white;
+        padding: 25px;
+        font-size: 1.2em;
+        a {
+            color: white;
+            text-decoration: none;
+            &:visited {
+                color: white;
+            }
+        }
+    }
+
+    .questions-container {
+        opacity: 0;
+        transition: opacity 1s ease;
+        &.visible {
+            opacity: 1;
+        }
+    }
+
+    .question-options-header {
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+
+    .question-option-categories {
+        margin-bottom: 30px;
+        padding: 0 25px;
+    }
+
+    .question-option-category-container {
+        height: 100%;
+    }
+    
+    .question-option-category {
+        height: 100%;
+    }
+
+    .question-container {
+        margin-top: 0px;
+    }
+
+}

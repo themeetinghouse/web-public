@@ -1,0 +1,26 @@
+.home-explore {
+    padding: 30px 20px 20px;
+    
+    .context-question {
+        background-color: #C5D1EC;
+        padding: 15px 25px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .question-text {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        .question-value {
+            font-weight: bold;
+        }
+        .question-sub-text {
+            font-size: 0.9em;
+            color: rgba(0,0,0,0.87);
+        }
+    }
+
+}

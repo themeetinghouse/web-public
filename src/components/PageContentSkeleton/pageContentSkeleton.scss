@@ -1,0 +1,25 @@
+.page-content-skeleton {   
+    padding: 20px;
+
+    .skeleton-header {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .leaf-item {
+        background: #e6e9f1;
+        border-radius: 4px;
+        min-height: 300px;
+        height: 100%;
+    }
+    .inner {
+        min-height: 250px;
+    }
+    .inner-small {
+        min-height: 80px;
+    }
+    .inner-long {
+        min-height: 550px;
+    }
+}

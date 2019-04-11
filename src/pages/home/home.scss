@@ -1,0 +1,72 @@
+.page-home {
+    background-color: #F0F3FA;
+    height: 100%;
+
+    .content-container {
+        display: flex;
+    }
+    .main-container {
+        flex-grow: 1;
+    }
+
+}
+.conversation-drawer, .paper {
+    overflow-x: hidden;
+    transition: width 0.5s ease-in;
+    &.closed {
+        width: 0;
+    }
+    &.open {
+        width: 350px;
+    }
+    
+    .paper {
+        .drawer-header {
+            svg {
+                color: white;
+            }
+            background-color: #2F59BB;
+            color: white;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+        color: white;
+        background-color: #5392FF;
+    }
+
+    .community-connector-intro-container {
+        position: relative;
+        top: 46%;
+        transform: translateY(-50%);
+        text-align: center;
+        padding: 15px;
+
+        .intro-title {
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+
+        .buttonContainer {
+            padding: 15px 0;
+        }
+    }
+
+    .community-select-container {
+        padding: 10px 15px;
+        .community-select {
+            color: white;
+            width: 100%;
+        }
+
+    }
+
+    .community-conversation-container {
+        padding: 15px;
+
+        .card {
+            margin-bottom: 10px;
+            color: #424242;
+        }
+    }
+}

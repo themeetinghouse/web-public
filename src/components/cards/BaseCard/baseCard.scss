@@ -1,0 +1,40 @@
+.card-base {
+    margin-bottom: 20px;
+
+    .card-content {
+        padding: 0;
+        .card-content-inner {
+            padding: 15px;
+        }
+    }
+
+    .card-tag {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        background-color: #5277C7;
+        color: white;
+        border-radius: 4px;
+        padding: 3px 5px;
+        font-size: 1em;
+    }
+
+    .card-title {
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    .card-subtitle {
+        font-size: 1.0em;
+        color: #9B9B9B;
+        margin-bottom: 10px;
+    }
+    .card-description {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .card-actions {
+        justify-content: flex-end;
+    }    
+}

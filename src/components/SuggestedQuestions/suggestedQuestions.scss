@@ -1,0 +1,44 @@
+.suggested-questions {
+    transition: opacity 1s ease;
+    opacity: 0;
+    &.visible {
+      opacity: 1;  
+    }
+    margin-top: 50px;
+    .title {
+        font-weight: bold;
+        font-size: 1.3em;
+        width: 500px;
+        max-width: 80%;
+        border-bottom: 1px solid white;
+        padding-bottom: 8px;
+        margin: 0 auto;
+        margin-bottom: 12px;
+    }
+    .questions {
+        a {
+            color: white;
+            text-decoration: none;
+            &:visited {
+                color: white;
+            }
+        }
+        .question {
+            font-size: 1.1em;
+            padding: 5px 0;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .more-link {
+        font-weight: bold;
+        font-size: 1.1em;
+        padding: 5px 0;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

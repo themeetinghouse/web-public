@@ -1,0 +1,47 @@
+.page-header {
+    color: white;
+    position: relative;
+    z-index: 100;
+
+    .toolbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px;
+    }
+    .logo {
+        height: 65px;
+        flex-grow: 0;
+    }
+
+    .title-site-container {
+        padding-left: 15px;
+        .title {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        Button {
+            background-color: #5277C7;
+            color: white;
+            svg {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .question-bar {
+        flex-grow: 1;
+        .page-header-question-bar {
+            align-items: center;
+        }
+        input {
+            width: 50%;
+            max-width: 1550px;
+        }
+    }
+    .identity-header {
+        flex-grow: 0;
+    }
+}

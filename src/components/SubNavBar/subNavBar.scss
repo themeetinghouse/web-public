@@ -1,0 +1,22 @@
+.sub-nav-bar {
+    padding: 15px;
+    .sub-nav-item {
+        margin-right: 15px;
+        box-shadow: none;
+        // background-color: #E6ECF7;
+        // &.selected {
+        //     background-color: #5277C7;
+        // }
+    }
+
+    .sub-nav-bar-breadcrumbs {
+        display: flex;
+        align-items: center;
+        margin: 15px 5px 0;
+
+        svg {
+            font-size: 12px;
+            margin: 0 10px;
+        }
+    }
+}
